@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="建宇罗 - 设计师个人作品集">
+    <title>建宇罗 - 作品集</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">建宇罗</div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#portfolio">作品</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页区域 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>建宇罗</h1>
+            <p class="tagline">设计师 | 创意工作者</p>
+            <p class="subtitle">专业的设计、包装、平面等创意作品</p>
+            <a href="#portfolio" class="btn">查看作品</a>
+        </div>
+    </section>
+
+    <!-- 关于区域 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>我是一名专业的设计师，拥有多年的设计经验。我擅长平面设计、包装设计等创意工作。</p>
+                    <p>我相信每个设计都应该有故事，每个作品都应该有价值。</p>
+                    <p>让我们一起创造美妙的设计作品！</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集区域 -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>我的作品</h2>
+            
+            <!-- 筛选按钮 -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="design">平面设计</button>
+                <button class="filter-btn" data-filter="packaging">包装设计</button>
+                <button class="filter-btn" data-filter="other">其他</button>
+            </div>
+
+            <!-- 作品网格 -->
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- 示例作品 -->
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/300x300?text=平面设计作品1" alt="平面设计作品1">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>品牌海报设计</h3>
+                        <p class="category">平面设计</p>
+                        <p>现代简约风格的品牌宣传海报，突出品牌特色。</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="packaging">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/300x300?text=包装设计作品1" alt="包装设计作品1">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>产品包装设计</h3>
+                        <p class="category">包装设计</p>
+                        <p>精美的产品包装盒设计，兼具美观和实用性。</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/300x300?text=平面设计作品2" alt="平面设计作品2">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>宣传册设计</h3>
+                        <p class="category">平面设计</p>
+                        <p>企业宣传册的专业设计和排版。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 上传作品区域 -->
+    <section id="upload" class="upload">
+        <div class="container">
+            <h2>上传你的作品</h2>
+            <form class="upload-form" id="uploadForm">
+                <div class="form-group">
+                    <label for="projectName">项目名称：</label>
+                    <input type="text" id="projectName" placeholder="输入你的项目名称" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">选择分类：</label>
+                    <select id="category" required>
+                        <option value="">-- 选择分类 --</option>
+                        <option value="design">平面设计</option>
+                        <option value="packaging">包装设计</option>
+                        <option value="other">其他</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">项目描述：</label>
+                    <textarea id="description" rows="4" placeholder="详细描述你的项目..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="image">选择图片：</label>
+                    <input type="file" id="image" accept="image/*" required>
+                    <small>支持所有图片格式 (JPG, PNG, GIF, WebP等)</small>
+                </div>
+
+                <button type="submit" class="btn">上传作品</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 技能区域 -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>我的技能</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>Photoshop</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Illustrator</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>InDesign</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>After Effects</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>UI/UX设计</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 88%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>品牌设计</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 92%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系区域 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>联系我</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>联系方式</h3>
+                    <p><strong>邮箱：</strong> your.email@example.com</p>
+                    <p><strong>电话：</strong> +86 138-0000-0000</p>
+                    <p><strong>地址：</strong> 中国</p>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>发送消息</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="你的名字" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="你的邮箱" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="你的消息..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">发送</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 建宇罗. 版权所有。</p>
+            <div class="social-links">
+                <a href="#">微博</a>
+                <a href="#">微信</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
